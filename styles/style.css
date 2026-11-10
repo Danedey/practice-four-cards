@@ -126,3 +126,62 @@ body{
 .attribution{
     display: none;
 }
+/* to do 
+    --define font family for the section list
+    -- draw cubes for sections
+*/
+
+
+.card-feature-article{
+    padding: 0 1.5rem 0 1.5rem;
+}
+.card-feature-article header{
+    padding: 0 0.5rem 0 0.5rem;
+}
+.card-feature-article h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    text-align: center;
+    font-size: 1.64rem;
+
+}
+
+.card-feature-article h1 strong{
+    font-weight: 600;
+}
+
+.card-feature-article header p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.03rem;
+}
+
+.card-feature-article ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card-feature-article li h2{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.37rem;
+  margin: 0;
+}
+
+.card-feature-article li p{
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 0.9rem;
+  margin:0.5rem 0 0 0;
+}
+
+.card-feature-article li{
+  width: auto;
+  height: 13rem;
+  background-color: gray;
+  padding: 2rem;
+}
