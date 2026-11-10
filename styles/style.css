@@ -113,7 +113,7 @@
     --Blue: hsl(212, 86%, 64%);
 
     --Grey500: hsl(234, 12%, 34%);
-    --Grey400: hsl(212, 6%, 44%);
+    --Grey400: hsl(210, 6%, 44%);
     --White: hsl(0, 0%, 100%);
 
     font-size: 15px;
@@ -134,7 +134,12 @@ body{
 
 .card-feature-article{
     padding: 0 1.5rem 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
 }
+
 .card-feature-article header{
     padding: 0 0.5rem 0 0.5rem;
 }
@@ -162,7 +167,7 @@ body{
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .card-feature-article li h2{
@@ -182,6 +187,36 @@ body{
 .card-feature-article li{
   width: auto;
   height: 13rem;
-  background-color: gray;
+  background-color: var(--White);
   padding: 2rem;
+  box-shadow: 0rem 0.5rem 1.5rem rgb( 0 0 0 / 15%);
+  border-radius: 0.5rem;
+}
+
+.card-feature-article ul li:nth-child(1){
+  border-top: 0.3rem solid var(--Cyan);
+  background-image: url("../images/icon-supervisor.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 2.5rem right 2rem;
+}
+
+.card-feature-article ul li:nth-child(2){
+  border-top: 0.3rem solid var(--Red);
+  background-image: url("../images/icon-team-builder.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 2.5rem right 2rem;
+}
+
+.card-feature-article ul li:nth-child(3){
+  border-top: 0.3rem solid var(--Orange);
+  background-image: url("../images/icon-karma.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 2.5rem right 2rem;
+}
+
+.card-feature-article ul li:nth-child(4){
+  border-top: 0.3rem solid var(--Blue);
+  background-image: url("../images/icon-calculator.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 2.5rem right 2rem;
 }
