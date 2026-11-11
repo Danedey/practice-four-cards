@@ -127,8 +127,8 @@ body{
     display: none;
 }
 /* to do 
-    --define font family for the section list
-    -- draw cubes for sections
+    --make sure sizes and distances are right
+    -- work on the desktop design
 */
 
 
@@ -148,18 +148,22 @@ body{
     font-weight: 200;
     text-align: center;
     font-size: 1.64rem;
-
+    color: var(--Grey400);
 }
 
 .card-feature-article h1 strong{
     font-weight: 600;
+    font-size: 1.6rem;
+    color: var(--Grey500);
 }
 
 .card-feature-article header p{
     font-family: "Poppins", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
-    font-size: 1.03rem;
+    font-size: 1.02rem;
+    line-height: 1.4rem;
+    color: var(--Grey500)
 }
 
 .card-feature-article ul{
@@ -175,6 +179,7 @@ body{
   font-weight: 600;
   font-size: 1.37rem;
   margin: 0;
+  color:var(--Grey500);
 }
 
 .card-feature-article li p{
@@ -182,6 +187,7 @@ body{
   font-weight: 300;
   font-size: 0.9rem;
   margin:0.5rem 0 0 0;
+  color: var(--Grey400);
 }
 
 .card-feature-article li{
@@ -189,8 +195,9 @@ body{
   height: 13rem;
   background-color: var(--White);
   padding: 2rem;
-  box-shadow: 0rem 0.5rem 1.5rem rgb( 0 0 0 / 15%);
+  box-shadow: 0rem 1rem 1.5rem rgb( 0 0 0 / 10%);
   border-radius: 0.5rem;
+  
 }
 
 .card-feature-article ul li:nth-child(1){
