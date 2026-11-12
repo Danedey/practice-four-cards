@@ -1,18 +1,7 @@
-.poppins-thin {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
 
 .poppins-extralight {
   font-family: "Poppins", sans-serif;
   font-weight: 200;
-  font-style: normal;
-}
-
-.poppins-light {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
   font-style: normal;
 }
 
@@ -22,11 +11,6 @@
   font-style: normal;
 }
 
-.poppins-medium {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
 
 .poppins-semibold {
   font-family: "Poppins", sans-serif;
@@ -34,77 +18,8 @@
   font-style: normal;
 }
 
-.poppins-bold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
 
-.poppins-extrabold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-}
 
-.poppins-black {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.poppins-thin-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.poppins-extralight-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: italic;
-}
-
-.poppins-light-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.poppins-regular-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.poppins-medium-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.poppins-semibold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.poppins-bold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.poppins-extrabold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: italic;
-}
-
-.poppins-black-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: italic;
-}
 
 :root{
     --Red: hsl(0, 78%, 62%);
@@ -116,10 +31,11 @@
     --Grey400: hsl(210, 6%, 44%);
     --White: hsl(0, 0%, 100%);
 
-    font-size: 15px;
+    
 }
 
 body{
+    font-size: 15px;
     background-color: var(--White);
 }
 
@@ -128,8 +44,6 @@ body{
 }
 /* to do 
 
-    -- view screen and question how to solve this.
-    --make an intermediate layaout for a screen 700px wide and make the cars looks like a window
     -- finding out how to handle fontsizes for responsivness or good practices
 */
 
@@ -149,13 +63,13 @@ body{
     font-family: "Poppins", sans-serif;
     font-weight: 200;
     text-align: center;
-    font-size: 1.64rem;
+    font-size: 1.5rem;
     color: var(--Grey400);
 }
 
 .card-feature-article h1 strong{
     font-weight: 600;
-    font-size: 1.6rem;
+    font-size: 1.48rem;
     color: var(--Grey500);
 }
 
@@ -163,7 +77,7 @@ body{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     text-align: center;
-    font-size: 1.02rem;
+    font-size: .9rem;
     line-height: 1.4rem;
     color: var(--Grey500)
 }
@@ -180,15 +94,15 @@ body{
 .card-feature-article li h2{
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 1.37rem;
+  font-size: 1.3rem;
   margin: 0;
   color:var(--Grey500);
 }
 
 .card-feature-article li p{
   font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-size: 0.9rem;
+  font-weight: 400;
+  font-size: 0.86rem;
   margin:0.5rem 0 0 0;
   color: var(--Grey400);
 }
@@ -232,6 +146,60 @@ body{
   background-position: bottom 2.5rem right 2rem;
 }
 
+
+/* to fix    */
+@media  screen and (width >= 700px) and (width < 1000px) {
+
+   .card-feature-article header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 1rem;
+  }
+
+  .card-feature-article h1{
+    max-width: 20rem;
+    font-size: 1.6rem;
+    margin-bottom: 0;
+
+  }
+  .card-feature-article h1 strong {
+    font-size: 1.58rem;
+  }
+  .card-feature-article header p{
+    max-width: 34rem;
+    margin-top: 0;
+  }
+
+  
+  .card-feature-article ul{
+    display: grid;
+    grid-template-areas: 
+    "supervisor team"
+    "calculator team"
+    ;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+  }
+
+  .card-feature-article ul li:nth-child(1){
+    grid-area: supervisor;
+  }
+
+  .card-feature-article .column-container{
+    grid-area: team;
+  }
+
+  .card-feature-article ul li:nth-child(3){
+    grid-area: calculator;
+  }
+
+
+  
+
+}
 
 
 @media screen and (width > 1000px) {
