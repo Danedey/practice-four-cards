@@ -1,8 +1,8 @@
-# Frontend Mentor - Four card feature section solution
+# Frontend Mentor - Four Card Feature Section Solution
 
-This is a solution to the [Four card feature section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Four Card Feature Section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Table of contents
+## Table of Contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
@@ -16,14 +16,13 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
   - [AI Collaboration](#ai-collaboration)
 - [Author](#author)
 
-
 ## Overview
 
 ### The challenge
 
 Users should be able to:
 
-- View the optimal layout for the site depending on their device's screen size
+- View the optimal layout for the site depending on their device's screen size.
 
 ### Screenshot
 
@@ -46,11 +45,11 @@ Users should be able to:
 
 ### What I learned
 
-when you have different sections that later are going to be displayed as cards in your website, you can wrap them all inside a unordered list like:
+When you have different sections that are later going to be displayed as cards on your website, you can wrap them all inside an unordered list like this:
 
-from this:
+From this:
+
 ```html
-
 <section>
   <h2>Supervisor</h2>
   <p>Monitors activity to identify project roadblocks</p>
@@ -70,61 +69,57 @@ from this:
   <h2>Calculator</h2>
   <p>Uses data from past projects to provide better delivery estimates</p>
 </section>
-          
 ```
 
-to this
-```html
+To this:
 
+```html
 <ul>
-  <li> 
+  <li>
     <section>
       <h2>Supervisor</h2>
       <p>Monitors activity to identify project roadblocks</p>
     </section>
   </li>
-  <div class="column-container"> 
-    <li >
+  <div class="column-container">
+    <li>
       <section>
         <h2>Team Builder</h2>
         <p>Scans our talent network to create the optimal team for your project</p>
       </section>
     </li>
-    <li >
+    <li>
       <section>
         <h2>Karma</h2>
         <p>Regularly evaluates our talent to ensure quality</p>
       </section>
     </li>
   </div>
-  <li >
+  <li>
     <section>
       <h2>Calculator</h2>
       <p>Uses data from past projects to provide better delivery estimates</p>
     </section>
   </li>
 </ul>
-
 ```
 
-and another thing i realized is that when you change the css propertie from flex-direction: column to flex-direction: row, these two properties justify-content and align-items exchange behavior.
-
-
+And another thing I realized is that when you change the CSS property `flex-direction` from `column` to `row`, the `justify-content` and `align-items` properties exchange their behavior.
 
 ### Continued development
 
-i want to sharp my layout making because i didnt feel confortable enough with that aproach i used to make a diamon like figure with 4 cards. i needed to put two card in a column just in the center and a card beside each left and right. so i wrapped these two card in a div container and then center it.
+I want to sharpen my layout-making skills because I didn't feel comfortable enough with the approach I used to make a diamond-like figure with four cards. I needed to put two cards in a column right in the center, with one card beside each side, on the left and right. So, I wrapped these two cards in a div container and then centered it.
 
 ### Useful resources
 
-- [CSS_layout Flexbox](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Flexbox) - this help me to understand why my flex container centers in the x axis using justifly-content: center when you set a flex-direction to column. it has something to do with the main axis.
-- [CSS_layout/Grids](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Grids) - this article helped me to understand how to use grid areas for a custom layout.
+- [CSS Layout: Flexbox](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Flexbox) - This helped me understand why my flex container centers along the x-axis using `justify-content: center` when you set `flex-direction` to `column`. It has something to do with the main axis.
+- [CSS Layout: Grids](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Grids) - This article helped me understand how to use grid areas for a custom layout.
 
 ### AI Collaboration
 
-i used copilot to ask how can i handle font-sizes in my page so that i ended up using good practices, it was ok.
+I used Copilot to ask how I could handle font sizes on my page so that I ended up using good practices. It was okay.
 
-i used claude again to compare my aproach at structuring html files, i learnt a few things.
+I used Claude again to compare my approach to structuring HTML files. I learned a few things.
 
 ## Author
 
